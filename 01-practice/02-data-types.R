@@ -1,11 +1,32 @@
-# Неверные данные ---------------------------------------------------------
+# Плохие данные 1 ---------------------------------------------------------
 
-data <- readxl::read_excel("01-practice/02-bad-data.xlsx")
+data <- readxl::read_excel("01-practice/02-bad-data-1.xlsx")
 
 print(data)
-mean(data$x1) # 2.243333
-mean(data$x2) # NA
-mean(data$x3) # NA
+
+
+# Плохие данные 2 ---------------------------------------------------------
+
+data <- readxl::read_excel("01-practice/02-bad-data-2.xlsx")
+
+print(data)
+
+data$`First value`
+data$`Исход, 0 - жив, 1 - умер`
+data$analysis_date...6
+
+
+# Плохие данные 3 ---------------------------------------------------------
+
+data <- readxl::read_excel("01-practice/02-bad-data-3.xlsx")
+
+print(data)
+
+data$num1
+mean(data$num1)
+
+data$num2
+mean(data$num2) # NA
 
 
 # Число (numeric) ---------------------------------------------------------
@@ -61,12 +82,15 @@ as.Date("2025-04-18") + 30 # "2025-05-18
 data <- readxl::read_excel("01-practice/02-good-data.xlsx")
 
 print(data)
-mean(data$x1) # 2.243333
-mean(data$x2) # 2.243333
-mean(data$x3) # 1.936667
 
-data$z <- factor(data$z, c("СЗ", "ЧО", "ПО"))
-data$z
+mean(data$num1) # 2.243333
+mean(data$num2) # 2.243333
+mean(data$num3) # 1.936667
+
+data$res_type
+
+data$res_type <- factor(data$res_type, c("СЗ", "ЧО", "ПО"))
+data$res_type
 
 
 # summary -----------------------------------------------------------------
