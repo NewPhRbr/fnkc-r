@@ -12,6 +12,8 @@ library(tidyverse)
 #
 # * labs - подписи
 # * base_size - размер текста
+# * width - ширина сохраняемого графика
+# * height - высота сохраняемого графика
 
 plot_data <- data
 

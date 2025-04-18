@@ -9,12 +9,15 @@ tbl
 
 
 # Тест хи-квадрат (с поправкой Йетса)
+
 chisq.test(tbl, correct = TRUE)
 
 
 # Тест хи-квадрат (без поправки Йетса)
+
 chisq.test(tbl, correct = FALSE)
 
 
 # Тест Фишера (он же *точный* тест Фишера)
+
 fisher.test(tbl)
