@@ -84,7 +84,7 @@ data <- readxl::read_excel("01-practice/02-good-data.xlsx")
 print(data)
 
 mean(data$num1) # 2.243333
-mean(data$num2) # 2.243333
+mean(data$num2) # NA
 mean(data$num3) # 1.936667
 
 data$res_type
