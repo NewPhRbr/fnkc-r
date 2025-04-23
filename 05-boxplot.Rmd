@@ -93,6 +93,10 @@
 
 <div class="sourceCode"><pre><code><span><span class='fu'><a href='https://rdrr.io/r/stats/pairwise.wilcox.test.html'>pairwise.wilcox.test</a></span><span class='op'>(</span><span class="fnkc-required" data-toggle="fnkc-help" data-content="значения"><span class='va'>data</span><span class='op'>$</span><span class='va'>numbers</span></span>, <span class="fnkc-required" data-toggle="fnkc-help" data-content="группа"><span class='va'>data</span><span class='op'>$</span><span class='va'>group</span></span>, <span class="fnkc-required" data-toggle="fnkc-help" data-content="поправка">p.adjust.method <span class='op'>=</span> <span class='st'>"holm"</span></span><span class='op'>)</span></span></code></pre><button type="button" class="btn btn-copy" title="" aria-label="Copy to clipboard" data-toggle="popover" data-placement="top" data-trigger="hover" data-original-title="Copy to clipboard"><i class="bi"></i></button></div>
 
+---
+
+Загрузить скрипт [05-boxplot.R](scripts/05-boxplot.R)
+
 <script>
 $(function () {
   $('span[data-toggle="fnkc-help"]').popover({
