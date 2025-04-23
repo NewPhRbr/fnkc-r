@@ -1,1 +1,25 @@
 # Создание проекта
+
+Меню проектов находится в правом верхнем углу интерфейса Rstudio.
+
+![](images/03-create-project-1.png)
+
+Для создания нового проекта кликаем на меню.
+
+![](images/03-create-project-2.png)
+
+Выбираем `New Project`.
+
+![](images/03-create-project-3.png)
+
+Выбираем `New Directory`.
+
+![](images/03-create-project-4.png)
+
+В следующем меню заполняем поле названия директории проекта и выбираем папку, в котором она будет располагаться кнопкой `Browse`.
+
+![](images/03-create-project-5.png)
+
+После этого кликаем на кнопку `Create Project`, после чего проект будет создан и станет активен.
+
+![](images/03-create-project-6.png)
