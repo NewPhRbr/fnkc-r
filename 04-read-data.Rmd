@@ -42,6 +42,10 @@ summary(data)
 str(data)
 ```
 
+---
+
+Загрузить скрипт [03-read-data.R](scripts/03-read-data.R)
+
 <script>
 $(function () {
   $('span[data-toggle="fnkc-help"]').popover({
