@@ -1,0 +1,51 @@
+# Чтение данных
+
+Во всех примерах ниже в качестве названия используется `data`
+
+## Импорт Excel файла
+
+<dl>
+  <dt>path</dt>
+  <dd>Путь до файла</dd>
+
+  <dt>sheet</dt>
+  <dd>лист</dd>
+
+  <dt>range</dt>
+  <dd>диапазон ячеек на листе (верхняя левая : нижняя правая)</dd>
+</dl>
+
+<div class="sourceCode"><pre class="downlit r"><code class="R"><span><span class="va">data</span> <span class="op">&lt;-</span> <span class="fu">readxl</span><span class="fu">::</span><span class="fu"><a href="https://readxl.tidyverse.org/reference/read_excel.html">read_excel</a></span><span class="op">(</span></span>
+<span>  path <span class="op">=</span> <span class="st"><span class="fnkc-required" data-toggle="fnkc-help" data-content="название Excel файла">"data.xlsx"</span></span>,</span>
+<span>  sheet <span class="op">=</span> <span class="st"><span class="fnkc-required" data-toggle="fnkc-help" data-content="лист в Excel файле">"Лист 1"</span></span>,</span>
+<span>  range <span class="op">=</span> <span class="st"><span class="fnkc-required" data-toggle="fnkc-help" data-content="диапазон ячеек на листе (верхняя левая : нижняя правая)">"A1:F30"</span></span></span>
+<span><span class="op">)</span></span></code></pre><button type="button" class="btn btn-copy" title="" aria-label="Copy to clipboard" data-toggle="popover" data-placement="top" data-trigger="hover" data-original-title="Copy to clipboard"><i class="bi"></i></button></div>
+
+## Кодирование значений столбца (фактор)
+
+Определяет список и порядок допустимых значений.
+
+<dl>
+  <dt>column1</dt>
+  <dd>название столбца</dd>
+
+  <dt>levels</dt>
+  <dd>список значений</dd>
+</dl>
+
+<div class="sourceCode"><pre><code><span><span class='va'>data</span><span class='op'>$</span><span class='va'><span class="st"><span class="fnkc-required" data-toggle="fnkc-help" data-content="название столбца">column1</span></span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/factor.html'>factor</a></span><span class='op'>(</span><span class='va'>data</span><span class='op'>$</span><span class='va'><span class="st"><span class="fnkc-required" data-toggle="fnkc-help" data-content="название столбца">column1</span></span>, levels <span class='op'>=</span> <span class="st"><span class="fnkc-required" data-toggle="fnkc-help" data-content="список значений"><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"Вариант 1"</span>, <span class='st'>"Вариант 2"</span>, <span class='st'>"Вариант 3"</span><span class='op'>)</span><span class='op'>)</span></span></span></code></pre><button type="button" class="btn btn-copy" title="" aria-label="Copy to clipboard" data-toggle="popover" data-placement="top" data-trigger="hover" data-original-title="Copy to clipboard"><i class="bi"></i></button></div>
+
+## Проверка
+
+```r
+summary(data)
+str(data)
+```
+
+<script>
+$(function () {
+  $('span[data-toggle="fnkc-help"]').popover({
+    trigger: "hover"
+  });
+})
+</script>
