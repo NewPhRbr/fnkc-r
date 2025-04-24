@@ -28,6 +28,9 @@
 
   <dt>base_size</dt>
   <dd>размер текста</dd>
+  
+  <dt>filename</dt>
+  <dd>название сохраняемого графика</dd>
 
   <dt>width</dt>
   <dd>ширина сохраняемого графика</dd>
@@ -47,9 +50,9 @@
 <span>    <span>x <span class='op'>=</span> <span class="fnkc-optional" data-toggle="fnkc-help" data-content="подпись оси X"><span class='st'>"Подпись оси X"</span>,</span></span></span>
 <span>    <span>y <span class='op'>=</span> <span class="fnkc-optional" data-toggle="fnkc-help" data-content="подпись оси Y"><span class='st'>"Подпись оси Y"</span></span></span>
 <span>  <span class="fnkc-optional" data-toggle="fnkc-help" data-content="подписи осей"><span class='op'>)</span></span></span></span> <span class='op'>+</span>
-<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggtheme.html'>theme_classic</a></span><span class='op'>(</span><span>base_size <span class='op'>=</span> <span class="fnkc-optional" data-toggle="fnkc-help" data-content="размер текста"><span class='fl'>13</span></span><span class='op'>)</span></span></span>
+<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggtheme.html'>theme_classic</a></span><span class='op'>(</span><span>base_size <span class='op'>=</span> <span class="fnkc-optional" data-toggle="fnkc-help" data-content="размер текста"><span class='st'>13</span></span><span class='op'>)</span></span></span>
 <span></span>
-<span></span><span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggsave.html'>ggsave</a></span><span class='op'>(</span><span class='st'>"plot.png"</span>, <span>width <span class='op'>=</span> <span class="fnkc-optional" data-toggle="fnkc-help" data-content="ширина сохраняемого графика"><span class='fl'>4</span></span></span>, <span>height <span class='op'>=</span> <span class="fnkc-optional" data-toggle="fnkc-help" data-content="высота сохраняемого графика"><span class='fl'>5</span></span><span class='op'>)</span></span></span>
+<span></span><span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggsave.html'>ggsave</a></span><span class='op'>(</span><span class="fnkc-optional" data-toggle="fnkc-help" data-content="название сохраняемого графика"><span class='st'>"plot.png"</span></span>, <span>width <span class='op'>=</span> <span class="fnkc-optional" data-toggle="fnkc-help" data-content="ширина сохраняемого графика"><span class='st'>4</span></span></span>, <span>height <span class='op'>=</span> <span class="fnkc-optional" data-toggle="fnkc-help" data-content="высота сохраняемого графика"><span class='st'>5</span></span><span class='op'>)</span></span></span>
 </code></pre><button type="button" class="btn btn-copy" title="" aria-label="Copy to clipboard" data-toggle="popover" data-placement="top" data-trigger="hover" data-original-title="Copy to clipboard"><i class="bi"></i></button></div>
 
 
